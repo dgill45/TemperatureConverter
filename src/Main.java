@@ -10,22 +10,22 @@ public class Main {
         System.out.print("Enter your choice (1/2): ");
         int choice = scan.nextInt();
 
-        double temperature;
-        double convertedTemperature;
+        int temperature;
+        int convertedTemperature;
 
         switch (choice) {
             case 1:
                 System.out.print("Enter temperature in Celsius: ");
-                temperature = scan.nextDouble();
+                temperature = scan.nextInt();
                 convertedTemperature = TempConverter.celsiusToFahrenheit(temperature);
                 System.out.println(String.format("Converted temperature in Fahrenheit: %.2f \u00b0F", convertedTemperature));
                 break;
 
             case 2:
                 System.out.print("Enter temperature in Fahrenheit: ");
-                temperature = scan.nextDouble();
+                temperature = scan.nextInt();
                 convertedTemperature = TempConverter.fahrenheitToCelsius(temperature);
-                System.out.println(String.format("Converted temperature in Celsius: %.2f \u00b0 C", convertedTemperature));
+                System.out.println(String.format("Converted temperature in Celsius: %.2f \u00b0C", convertedTemperature));
                 break;
 
             default:

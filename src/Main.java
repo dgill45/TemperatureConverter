@@ -18,14 +18,14 @@ public class Main {
                 System.out.print("Enter temperature in Celsius: ");
                 temperature = scan.nextInt();
                 convertedTemperature = TempConverter.celsiusToFahrenheit(temperature);
-                System.out.println(String.format("Converted temperature in Fahrenheit: %.2f \u00b0F", convertedTemperature));
+                System.out.println(String.format("Converted temperature in Fahrenheit: %d \u00b0F", convertedTemperature));
                 break;
 
             case 2:
                 System.out.print("Enter temperature in Fahrenheit: ");
                 temperature = scan.nextInt();
                 convertedTemperature = TempConverter.fahrenheitToCelsius(temperature);
-                System.out.println(String.format("Converted temperature in Celsius: %.2f \u00b0C", convertedTemperature));
+                System.out.println(String.format("Converted temperature in Celsius: %d \u00b0C", convertedTemperature));
                 break;
 
             default:
